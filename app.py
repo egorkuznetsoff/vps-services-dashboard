@@ -76,6 +76,17 @@ SERVICES = [
         "category": "panel",
     },
     {
+        "id": "perevod",
+        "name": "Perevod",
+        "description": "Голосовой переводчик: казахский, русский, китайский — распознавание речи, перевод и озвучка.",
+        "description_en": "Voice translator: Kazakh, Russian, Chinese — speech recognition, translation and text-to-speech.",
+        "stack": ["Python 3", "Flask", "Gunicorn", "edge-tts", "Web Speech API"],
+        "port": 8090,
+        "url": "/perevod/",
+        "systemd_unit": "perevod.service",
+        "category": "panel",
+    },
+    {
         "id": "social",
         "name": "Social Autoposting",
         "description": "Автопостинг в соцсети (VK, Instagram, Threads, Facebook) по расписанию.",
