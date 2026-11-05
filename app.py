@@ -131,17 +131,6 @@ SERVICES = [
         "category": "static",
     },
     {
-        "id": "photo-backup",
-        "name": "Photo/Video Backup",
-        "description": "Архив фото и видео, оставшийся от Immich (сам Immich удалён): upload-archive, дамп БД и docker-compose.yml, ~80 ГБ.",
-        "description_en": "Photo and video archive left over from Immich (Immich itself removed): upload-archive, DB dump and docker-compose.yml, ~80 GB.",
-        "stack": ["Файловый архив", "PostgreSQL dump"],
-        "port": None,
-        "url": None,
-        "systemd_unit": None,
-        "category": "static",
-    },
-    {
         "id": "telega",
         "name": "Telega",
         "description": "Self-hosted веб-клиент Telegram (сборка tweb), отдельный поддомен, раздаётся nginx с проксированием к серверам Telegram.",
